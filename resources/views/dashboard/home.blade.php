@@ -478,7 +478,10 @@
 @endsection
 
 @push('scripts')
+<script src="{{ asset('js/custom/jquery-ui.min.js') }}"></script>
 <script src="{{ asset('js/custom/lobipanel.min.js') }}"></script>
+<script src="{{ asset('js/custom/matchHeight.js') }}"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
     $(document).ready(function() {
         $('.panel').each(function () {
