@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::prefix('/dashboard')->middleware('auth')->group(function () {
-    Route::view('home','dashboard.home');
+    Route::get('', function () {
+        return redirect()->route('DashboardHome');
+    });
+    Route::view('home','dashboard.home')->name('DashboardHome');
     Route::view('test','dashboard.testhome');
 });
 
