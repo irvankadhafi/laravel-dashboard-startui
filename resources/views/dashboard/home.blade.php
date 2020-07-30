@@ -1,5 +1,4 @@
-{{--@extends('dashboard.layouts.app')--}}
-@extends('layouts.app', ['body_class' => 'with-side-menu'])
+@extends('layouts.app', ['body_class' => 'with-side-menu control-panel control-panel-compact'])
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/custom/lobipanel.min.css') }}">

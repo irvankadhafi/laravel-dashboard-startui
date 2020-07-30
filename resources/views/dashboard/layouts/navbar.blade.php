@@ -1,6 +1,6 @@
 <header class="site-header">
     <div class="container-fluid">
-        <a href="#" class="site-logo">
+        <a href="{{route('DashboardHome')}}" class="site-logo">
             <img class="hidden-md-down" src="{{ asset('img/logo-2.png') }}" alt="">
             <img class="hidden-lg-down" src="{{ asset('img/logo-2-mob.png') }}" alt="">
         </a>
@@ -185,7 +185,7 @@
                             <img src="{{ asset('img/avatar-2-64.png') }}" alt="">
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
-                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>
+                            <a class="dropdown-item" href="{{route('DashboardProfile')}}"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>
                             <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Settings</a>
                             <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-question-sign"></span>Help</a>
                             <div class="dropdown-divider"></div>

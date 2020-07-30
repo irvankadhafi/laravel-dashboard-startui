@@ -21,7 +21,16 @@ Route::prefix('/dashboard')->middleware('auth')->group(function () {
         return redirect()->route('DashboardHome');
     });
     Route::view('home','dashboard.home')->name('DashboardHome');
-    Route::view('test','dashboard.testhome');
+    Route::view('mail','dashboard.mail')->name('DashboardMail');
+    Route::view('tables','dashboard.tables')->name('DashboardTables');
+    Route::view('profile','dashboard.profile')->name('DashboardProfile');
+    Route::view('tasks','dashboard.list_task')->name('DashboardTask');
+    Route::prefix('messenger')->group(function (){
+        Route::view('index','dashboard.messages.messenger')->name('DashboardMessenger');
+        Route::view('chat','dashboard.messages.chat')->name('DashboardChat');
+        Route::view('write','dashboard.messages.chat_write')->name('ChatWrite');
+        Route::view('user','dashboard.messages.chat_user')->name('ChatUser');
+    });
 });
 
 Auth::routes();
