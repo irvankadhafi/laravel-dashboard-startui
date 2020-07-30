@@ -1,4 +1,5 @@
-@extends('dashboard.layouts.app')
+{{--@extends('dashboard.layouts.app')--}}
+@extends('layouts.app', ['body_class' => 'with-side-menu'])
 
 @push('styles')
 <link rel="stylesheet" href="{{ asset('css/custom/lobipanel.min.css') }}">
