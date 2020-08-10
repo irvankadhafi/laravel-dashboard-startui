@@ -34,6 +34,12 @@
                 <span class="lbl">Tables</span>
             </a>
         </li>
+        <li class="blue-dirty">
+            <a href="{{route('DashboardCharts')}}">
+                <span class="glyphicon glyphicon-signal"></span>
+                <span class="lbl">HighCharts</span>
+            </a>
+        </li>
 
 
     </ul>

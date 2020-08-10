@@ -30,9 +30,9 @@ Route::prefix('/dashboard')->middleware('auth')->group(function () {
         Route::view('chat','dashboard.messages.chat')->name('DashboardChat');
         Route::view('write','dashboard.messages.chat_write')->name('ChatWrite');
         Route::view('user','dashboard.messages.chat_user')->name('ChatUser');
+        Route::view('charts','dashboard.chart')->name('DashboardCharts');
     });
 });
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
